@@ -1,16 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dennis_Danil</title>
+    <style>
+        body.wave {
+            background: linear-gradient(90deg, orange, purple, teal);
+            background-size: 400% 400%;
+            animation: wave 10s ease infinite;
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            overflow: auto;
+            position: relative;
+            cursor: url('https://cdn.discordapp.com/emojis/1113145869492035684.gif?size=48&quality=lossless&name=foxspin'), auto;
+        }
 
-<html>
-    <h1>
-        Hey, I'm Dennis_Danli
-    </h1>
-    <body>
-        <h2>About me</h2>
-        <p>
-            I am a tea addict who makes vidoes sometimes.
-        </p>
-        <h2>What I'm working on</h2>
-        <p>
-            Soomething
-        </p>
-    </body>
+        @keyframes wave {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .profile-content {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            max-width: 90%;
+            margin: 20px auto;
+        }
+
+        .person-box, .join-button, .social-button {
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+            cursor: pointer;
+            display: inline-block;
+            color: black;
+            text-decoration: none;
+        }
+
+        .person-box:hover, .join-button:hover, .social-button:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+            color: black;
+        }
+
+        .social-button img {
+            max-height: 20px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+        
+        .ui-box {
+            background: linear-gradient(45deg, #ff0000, #ff00ff, #0000ff, #00ffff, #00ff00, #ffff00, #ff0000);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            max-width: 90%;
+            margin: 20px auto;
+            position: static;
+            transform: none;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .discord-img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .web-ui {
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            max-width: 90%;
+            margin: 20px auto;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                font-size: 14px;
+            }
+
+            .person-box {
+                display: block;
+                margin: 10px auto;
+            }
+        }
+    </style>
+</head>
+<body class="wave">
+    <div class="profile-content">
+        <h1>Hey, I'm Dennis_Danil</h1>
+        <div>
+            <h2>About me</h2>
+            <p>I am a Tea addict who makes videos sometimes. I tend to do random stupid stuff and I'm into a lot of tech-related stuff. I enjoy playing games like Minecraft and Roblox. I also enjoy Fixing Devices like Computers and phones or Even Building them</p>
+        </div>
+        <div>
+            <h2>What I'm working on</h2>
+            <p>I sometimes make Discord bots, although I'm not very good at it. I tend to try my best</p>
+        </div>
+        <div>
+            <h2>Find me on</h2>
+            <p>Discord: dennis_danil</p>
+            <div>
+                <a href="https://www.youtube.com/channel/UCTny_qpQ41rFtKb2gy9EJaA" class="social-button" style="background-color: #FF0000;" title="YouTube"><img src="https://cdn.jsdelivr.net/npm/simple-icons@7.18.0/icons/youtube.svg" alt="YouTube"> YouTube</a>
+                <a href="https://psnprofiles.com/DennisDanil" class="social-button" style="background-color: #2e6db4;" title="PlayStation"><img src="https://cdn.jsdelivr.net/npm/simple-icons@7.18.0/icons/playstation.svg" alt="PlayStation"> PlayStation</a>
+                <a href="" class="social-button" style="background-color:  #6441a4;" title="Twitch"><img src="https://cdn.jsdelivr.net/npm/simple-icons@7.18.0/icons/twitch.svg" alt="Twitch"> Twitch</a>
+                <a href="https://www.xbox.com/en-US/play/user/Dennis%20Danil" class="social-button" style="background-color: #107c10;" title="Xbox"><img src="https://cdn.jsdelivr.net/npm/simple-icons@7.18.0/icons/xbox.svg" alt="Xbox"> Xbox</a>
+                <a href="https://www.twitch.tv/dennis_danil" class="social-button" style="background-color: #1DB954;" title="Spotify"><img src="https://cdn.jsdelivr.net/npm/simple-icons@7.18.0/icons/spotify.svg" alt="Spotify"> Spotify</a>
+                <a href="https://cash.app/$DennisDanilWintrich" class="social-button" style="background-color: 	#00CF31;" title="CashApp"><img src="https://cdn.jsdelivr.net/npm/simple-icons@7.18.0/icons/cashapp.svg" alt="CashApp"> CashApp</a>
+                <a href="https://www.instagram.com/dennis_danli/" class="social-button" style="background-color: #E1306C;" title="Instagram"><img src="https://cdn.jsdelivr.net/npm/simple-icons@7.18.0/icons/instagram.svg" alt="Instagram"> Instagram</a>
+            </div>
+        </div>
+        <div>
+            <h2>Some of my favorite people are:</h2>
+            <div class="person-box" style="background-color: darkmagenta;" id="Star">Star</div>
+            <div class="person-box" style="background-color: yellow;" id="Jaye-Waye">Jaye Waye</div>
+            <div class="person-box" style="background-color: navy;" id="Marley">Marley</div>
+            <div class="person-box" style="background-color: limegreen;" id="Danbot">Danbot</div>
+            <div class="person-box" style="background-color: #B76E79;" id="Gewy">Gewy</div>
+            <div class="person-box" style="background-color: #610000;" id="Shua">Shua</div>
+            <div class="person-box" style="background-color: #6540de;" id="Diaphobic">Diaphobic</div>
+            <div class="person-box" style="background-color: #D2042D;" id="Katt">Katt</div>
+            <div class="person-box" style="background-color: #2e0887;" id="Corey">Corey</div>
+        </div>
+        <div>
+            <button id="webButton">Google</button>
+        </div>
+    </div>
+    <div class="ui-box">
+        <h2>My Discord Server</h2>
+        <img class="discord-img" src="https://media.discordapp.net/stickers/995721983067172924.png?size=160&name=Bucket" alt="Discord Server Image">
+        <a href="https://discord.gg/JtdD7HWXGV" class="join-button" style="background-color: #0000ff;" title="My Discord Server">Join Now</a>
+    </div>
+    <div class="web-ui" style="display: none;">
+        <h2>Web Browser</h2>
+        <iframe id="webFrame" src="" width="100%" height="500"></iframe>
+    </div>
+
+    <script>
+        document.getElementById('Corey').addEventListener('click', function() {
+            window.location.href = 'https://discord.gg/e9pYehywn5';
+        });
+
+        document.getElementById('Shua').addEventListener('click', function() {
+            window.location.href = 'https://discord.gg/R9Ynf8W6N6';
+        });
+
+        document.getElementById('Jaye-Waye').addEventListener('click', function() {
+            window.location.href = 'https://discord.gg/92JQHNXqBF';
+        });
+
+        document.getElementById('Diaphobic').addEventListener('click', function() {
+            window.location.href = 'https://www.instagram.com/diaphobi.c?igsh=YTQwZjQ0NmI0OA==';
+        });
+
+        const webButton = document.getElementById('webButton');
+        const webUI = document.querySelector('.web-ui');
+        const webFrame = document.getElementById('webFrame');
+
+        webButton.addEventListener('click', function() {
+            webUI.style.display = webUI.style.display === 'none' ? 'block' : 'none';
+            if (webUI.style.display === 'block') {
+                webFrame.src = 'https://www.google.com';
+            } else {
+                webFrame.src = '';
+            }
+        });
+    </script>
+</body>
 </html>
